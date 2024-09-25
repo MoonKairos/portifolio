@@ -1,83 +1,88 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <title>Atividade Prática HTML</title>
-</head>
-<body>
-    <header>
-        <h1>HTML5: Introdução à Estrutura Básica - Atividade Prática</h1>
-        <hr>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         
-    </header>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <main>
-        <section>
+        <title>Atividade Prática HTML</title>
+    </head>
+    <body>
+        <header>
+            <h1>HTML5: Introdução à Estrutura Básica - Atividade Prática</h1>
+            <hr>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+
+        <main>
+            <section>
+                <figure>
+                    <iframe width="400px" src="https://www.youtube.com/embed/videoseries?list=PLdDSG31SIpM1LMukbCM7TCWp67IBRpv4e&si=QbY_eL0m8q7KRUg7" title="Série de vídeos Lo-Fi no YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption>Playlist Lo-Fi</figcaption>
+                </figure>
+            
+                <p>Colocando em prática os conhecimentos da aula sobre conceitos básicos de HTML.</p>
+                <p>Aqui, um parágrafo com uma tag de link para o site <a href="https://www.w3.org/">www.w3.org</a></p>
+
+                <h2>O que é a <a href="https://www.w3.org/">W3</a></h2>
+                <p>A W3, ou World Wide Web Consortium (W3C), é uma organização internacional que desenvolve padrões e diretrizes para a web. Fundada em 1994 por Tim Berners-Lee, o inventor da World Wide Web, a W3C é responsável por promover a evolução e a interoperabilidade da web, garantindo que ela continue acessível, segura e confiável para todos.</p>
+            </section>
+
             <figure>
-                <iframe width="400px" src="https://www.youtube.com/embed/videoseries?list=PLdDSG31SIpM1LMukbCM7TCWp67IBRpv4e&si=QbY_eL0m8q7KRUg7" title="Série de vídeos Lo-Fi no YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <figcaption>Playlist Lo-Fi</figcaption>
+                <img src="https://media.tenor.com/i-8sEP9j1fAAAAAi/sonic-sonic-running.gif" alt="Gif do Sonic correndo em alta velocidade" width="5%">
+                <figcaption>Sonic em ação!</figcaption>
             </figure>
-        
-            <p>Colocando em prática os conhecimentos da aula sobre conceitos básicos de HTML.</p>
-            <p>Aqui, um parágrafo com uma tag de link para o site <a href="https://www.w3.org/">www.w3.org</a></p>
 
-            <h2>O que é a <a href="https://www.w3.org/">W3</a></h2>
-            <p>A W3, ou World Wide Web Consortium (W3C), é uma organização internacional que desenvolve padrões e diretrizes para a web. Fundada em 1994 por Tim Berners-Lee, o inventor da World Wide Web, a W3C é responsável por promover a evolução e a interoperabilidade da web, garantindo que ela continue acessível, segura e confiável para todos.</p>
-        </section>
+            <hr>
 
-        <figure>
-            <img src="https://media.tenor.com/i-8sEP9j1fAAAAAi/sonic-sonic-running.gif" alt="Gif do Sonic correndo em alta velocidade" width="5%">
-            <figcaption>Sonic em ação!</figcaption>
-        </figure>
+            <table id="tabuleiro">
+                <caption>Jogo da Velha - Usando tabela</caption>
+                <tr>
+                    <td data-pos="0"></td>
+                    <td data-pos="1"></td>
+                    <td data-pos="2"></td>
+                </tr>
+                <tr>
+                    <td data-pos="3"></td>
+                    <td data-pos="4"></td>
+                    <td data-pos="5"></td>
+                </tr>
+                <tr>
+                    <td data-pos="6"></td>
+                    <td data-pos="7"></td>
+                    <td data-pos="8"></td>
+                </tr>
+            </table>
+
+            <hr>
+
+            <form action="#">
+                <fieldset>
+                    <legend>Deixe seu comentário:</legend>
+                    <label for="comentarios">Comentários:</label>
+                    <textarea name="comentarios" id="comentarios" cols="0" rows="10" placeholder="Deixe seu Comentario..."></textarea>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </main>
 
         <hr>
 
-        <table border="1">
-            <caption>Exemplo de Tabela</caption>
-            <tr>
-                <td>X</td>
-                <td>O</td>
-                <td>X</td>
-            </tr>
-            <tr>
-                <td>O</td>
-                <td>X</td>
-                <td>O</td>
-            </tr>
-            <tr>
-                <td>X</td>
-                <td>O</td>
-                <td>X</td>
-            </tr>
-        </table>
+        <footer>
+            Rodapé - Reginaldo, estudante de Ciência da Computação pela <a href="https://descomplica.com.br/">Descomplica.</a>
+            <p> EU AMO A ALENDRY 😍 <!-- Comentário --></p>
+        </footer>
 
-        <hr>
+        <script src = "script.js"></script>
 
-        <form action="#">
-            <fieldset>
-                <legend>Deixe seu comentário:</legend>
-                <label for="comentarios">Comentários:</label>
-                <textarea name="comentarios" id="comentarios" cols="0" rows="10" placeholder="Deixe seu Comentario..."></textarea>
-                <input type="submit" value="Enviar">
-            </fieldset>
-        </form>
-    </main>
-
-    <hr>
-
-    <footer>
-        Rodapé - Reginaldo, estudante de Ciência da Computação pela <a href="https://descomplica.com.br/">Descomplica. EU AMO A ALENDRY 😍 <!-- Comentário --></a>
-    </footer>
-</body>
+    </body>
 </html>

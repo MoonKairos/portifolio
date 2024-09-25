@@ -72,24 +72,32 @@ main p {
 }
 
 /* Tabela */
+/* Estilos para a tabela */
 table {
-    width: 25%;
     border-collapse: collapse;
-    margin-top: 20px;
-    margin: auto;
+    margin: 20px auto;
 }
 
-table, th, td {
+/* Estilos para as células */
+th, td {
+    height: 50px;
+    width: 50px;
     border: 1px solid #FFFFFF;
-    padding: 10px;
+    padding: 0;
     text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 24px; /* Tamanho da fonte para as células */
 }
 
+/* Estilo para o caption */
 table caption {
     margin-bottom: 10px;
     font-weight: bold;
     color: #FFFFFF;
+    font-size: 18px; /* Tamanho da fonte específico para o caption */
 }
+
 
 /* Estilos para figuras e imagens */
 figure {
