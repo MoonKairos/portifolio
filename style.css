@@ -179,3 +179,36 @@ main a{
 main a:hover{
     text-decoration:underline;
 }
+
+/*________________________________tictactoy_________________________*/
+
+.x:hover{
+    background-color: #9D00FF;
+}
+
+.o:hover{
+    background-color:#32CD32;
+}
+
+.acenderX{
+    background-color: #9D00FF; /* Cor de destaque inicial */
+    transition: background-color 0.5s; /* Transição suave */
+}
+
+.acenderY{
+    background-color: #32CD32; /* Cor de destaque inicial */
+    transition: background-color 0.5s; /* Transição suave */
+}
+
+@keyframes piscar{
+    100%{
+        opacity: 1;
+    }0%{
+        opacity: 0;
+    }
+}
+
+.piscar{
+
+    animation: piscar 0.8s infinite;
+}
